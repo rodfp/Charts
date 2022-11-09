@@ -159,7 +159,7 @@
 		F941C88BF814DF51C465CB95 /* LineChartDataSetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429E88F2729735DC092EE556 /* LineChartDataSetProtocol.swift */; };
 		FA07D034D9C3BC7795184ACA /* LineScatterCandleRadarChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58BD7B14BEA440783ED8D2B /* LineScatterCandleRadarChartDataSet.swift */; };
 		FAAD9FF6565DED2652188584 /* PieChartDataSetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2AA6CC89F809DCCD7605B4 /* PieChartDataSetProtocol.swift */; };
-		FB1DA0E9291B5F0900D3CC12 /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = FB1DA0E8291B5F0900D3CC12 /* Numerics */; };
+		FBCEDBD9291C6E3900979E47 /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = FBCEDBD8291C6E3900979E47 /* Numerics */; };
 		FD37AAC0270F390FFC470A65 /* ChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B73FCEDD3841E7B958F6A9 /* ChartDataProvider.swift */; };
 		FDBDAFA7A5337C6E3992DACE /* ComponentBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C9A105A7DB64F39DDA648B /* ComponentBase.swift */; };
 /* End PBXBuildFile section */
@@ -347,7 +347,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1DA0E9291B5F0900D3CC12 /* Numerics in Frameworks */,
+				FBCEDBD9291C6E3900979E47 /* Numerics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,7 +754,7 @@
 			);
 			name = Charts;
 			packageProductDependencies = (
-				FB1DA0E8291B5F0900D3CC12 /* Numerics */,
+				FBCEDBD8291C6E3900979E47 /* Numerics */,
 			);
 			productName = Charts;
 			productReference = 65AD9E95D9ED4DC0BD73A743 /* Charts.framework */;
@@ -809,7 +809,7 @@
 			mainGroup = 865A1CF149F52850CAB7F177;
 			packageReferences = (
 				22BBDA0625CC4C2F00435670 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
-				FB1DA0E7291B5F0900D3CC12 /* XCRemoteSwiftPackageReference "greenlight-spm" */,
+				FBCEDBD7291C6E3900979E47 /* XCRemoteSwiftPackageReference "Numerics" */,
 			);
 			productRefGroup = AB2D554102718F209377399E /* Products */;
 			projectDirPath = "";
@@ -1318,12 +1318,12 @@
 				minimumVersion = 1.8.2;
 			};
 		};
-		FB1DA0E7291B5F0900D3CC12 /* XCRemoteSwiftPackageReference "greenlight-spm" */ = {
+		FBCEDBD7291C6E3900979E47 /* XCRemoteSwiftPackageReference "Numerics" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/GreenlightMe/greenlight-spm.git";
+			repositoryURL = "git@github.com:GreenlightMe/Numerics.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1334,9 +1334,9 @@
 			package = 22BBDA0625CC4C2F00435670 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
 		};
-		FB1DA0E8291B5F0900D3CC12 /* Numerics */ = {
+		FBCEDBD8291C6E3900979E47 /* Numerics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FB1DA0E7291B5F0900D3CC12 /* XCRemoteSwiftPackageReference "greenlight-spm" */;
+			package = FBCEDBD7291C6E3900979E47 /* XCRemoteSwiftPackageReference "Numerics" */;
 			productName = Numerics;
 		};
 /* End XCSwiftPackageProductDependency section */
