@@ -9,7 +9,7 @@
 //  https://github.com/danielgindi/Charts
 //
 
-import Algorithms
+import Numerics
 import Foundation
 
 /// Determines how to round DataSet index values for `ChartDataSet.entryIndex(x, rounding)` when an exact x-value is not found.
