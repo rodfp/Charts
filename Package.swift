@@ -5,9 +5,7 @@ import PackageDescription
 let package = Package(
     name: "Charts",
     platforms: [
-          .iOS(.v12),
-          .tvOS(.v12),
-          .macOS(.v10_13),
+          .iOS(.v12)
     ],
     products: [
         .library(
@@ -19,13 +17,13 @@ let package = Package(
             targets: ["Charts"])
     ],
     dependencies: [
-        .package(url: "https://github.com/GreenlightMe/greenlight-spm",
-                 branch: "main")
+        .package(url: "git@github.com:GreenlightMe/Numerics.git",
+                 from: "0.0.2")
     ],
     targets: [
         .target(
             name: "Charts",
-            dependencies: [.product(name: "Numerics", package: "greenlight-spm")]
+            dependencies: ["Numerics"]
         )
     ],
     swiftLanguageVersions: [.v5]
