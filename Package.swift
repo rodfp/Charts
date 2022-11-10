@@ -25,6 +25,5 @@ let package = Package(
             name: "Charts",
             dependencies: ["Numerics"]
         )
-    ],
-    swiftLanguageVersions: [.v5]
+    ]
 )
